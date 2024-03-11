@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <section class="container>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>GotoOnsen</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+    
+   
+    <!-- スライドショー -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    pause: 5000,
+                });
+            });
+    </script>
+
+</head>
+<body>
+
+     <!-- ヘッダー -->
+    <!-- ロゴの用意 -->
+    <header>
+        <div class = "header-left">
+            <a href="./index.html">
+                <img class="logo" src="./assets/atamilogo.png" alt="logo">
+            </a>
+        </div>
+        <div class = "header-right">
+            <ul class="menu">
+                <li><a class="head-menu" href="./gourmet.html">食事</a></li>
+                <li><a class="head-menu" href="./spot.html">スポット</a></li>
+                <li><a class="head-menu" href="./event.html">イベント</a></li>
+                <li><a class="head-menu" href="./stay.html">宿泊</a></li>
+            </ul>
+        </div>
+        <!-- ハンバーガーメニュー （画像をメニューにすることはできるか）-->
+        <!-- <button class="hamburger-menu" id="js-hamburger-menu">
+            <span class="hamburger-menu__bar"></span>
+            <span class="hamburger-menu__bar"></span>
+            <span class="hamburger-menu__bar"></span>
+        </button> -->
+    </header>
+
+
+    <main>
+        <!-- スライドショー画面作成中。-->
+
+        <!-- スライド本体・左右ボタン・インジケーター -->
+        <!-- スライドショー画像 -->
+        <!-- /*width="400px" height="300px"*/ -->
+        <section class="slide-sec">
+            <div id="slider" class="slider">
+                   
+                    <img class="top_img1"  src="./assets/20220820kaisen1.jpg" alt="海鮮丼1">
+                    
+                    <img class="top_img2"  src="./assets/kiunkakumon.jpg" alt="起雲閣門">
+
+                    <img class="top_img3"  src="./assets/Rouault_fall.JPG" alt="山口美術館">
+
+                    <img class="top_img3"  src="./assets/atami_hanabi.PNG" alt="花火１">
+                
+                    <img class="top_img4"  src="./assets/harvest_view.JPG" alt="正面">
+            </div> 
+        <!-- 左右ボタン -->
+        <!-- <div class="slide-wrapper">
+            
+            <span id="prev" class="prev"></span>
+            <span id="next" class="next"></span> -->
+
+
+
+            <!-- インジケータースライドの数だけ用意 -->
+            <!-- <ul class="indicator" id="indicator">
+                <li class="list"></li>
+                <li class="list"></li>
+            </ul> -->
+        </section>
+
+        
+        <!-- 横並びメニュー -->
+        <section class="menu-sec">
+            <div class="menu-inner">
+                <ul class="menu">
+                        <li><a class="main-menu" href="./gourmet.html"><i class="fa-solid fa-utensils"></i>食事</a></li>
+                        <li><a class="main-menu" href="./spot.html">スポット</a></li>
+                        <li><a class="main-menu" href="./event.html">イベント</a></li>
+                        <li><a class="main-menu" href="./stay.html">宿泊</a></li>
+                </ul>
+            </div>
+       </section>
+
+       <!-- すでにある要素（記事）の中からランダムにピックアップ -->
+       <section class="PU-sec">
+        <h3>Todays Pick Up!</h3>
+        <div class="pu-center">
+            <a href="./spot-2.html" class="pu-center-btn"><img src="./assets/yamagutimuse.JPG" alt="" class="pu-center-img"></a>
+        </div>
+        
+        <script type="text/javascript">
+            var imglist = new Array(
+               "./assets/20220820kaisen1.jpg",
+               "./assets/atami_hanabi.PNG",
+               "./assets/atami_hanabi2.PNG",
+               "./assets/kiunkakumon.jpg" );
+            var selectnum = Math.floor(Math.random() * imglist.length);
+            var output = a
+            // "<a href=" "./gourmet-1.html">
+            // "<img src=" + imglist[selectnum] + "></a>;
+            document.write(output);
+         </script>
+
+         <!-- <div class="PU-menu">
+                    <a class="main-menu" href="./gourmet.html">食事</a>
+                    <a class="main-menu" href="./spot.html">スポット</a>
+                    <a class="main-menu" href="./event.html">イベント</a>
+                    <a class="main-menu" href="./stay.html">宿泊</a>
+        </div> -->
+       </section>
+       
+
+       <!-- 今後の体験のブックマーク -->
+       <!-- <section class="BM-sec">
+        <h3>これから行きたいところ</h3>
+       </section>
+        -->
+
+    <!-- <div class="content blue">
+        <h1>Lorem ipsum</h1>
+        <p>Quisque vitae feugiat nunc. Aenean rutrum iaculis lectus. Quisque lectus est, tristique vitae feugiat vitae, dapibus quis lacus.</p>
+      </div>
+      <div class="shapedividers_com-8260"></div>
+      <div class="content">
+        <h2>Morbi et gravida leo</h2>
+        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id feugiat ex, ultricies volutpat diam.</p>
+    </div>    -->
+    </main>
+    
+
+    
+
+    <footer>
+        
+        <small class="footer">Copyright &copy; GotoOnsen .inc</small>
+    </footer>
+</section>
+</body>
+</html>

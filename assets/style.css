@@ -1,0 +1,510 @@
+
+
+/* .header-right{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background: #eee;
+  display: flex;
+  margin-right: auto;
+  box-sizing: border-box;
+  justify-content: space-between;
+  text-align: right;
+} */
+
+a:visited{
+  color: black;
+}
+
+.logo{
+  height: 100px;
+}
+
+.slider{
+  width: 200px;
+  height: 200px;
+}
+
+.top_img{
+  width: 500px;
+  height: 500px;
+}
+
+.top_img1{
+   width: 700px;
+   height: 600px;
+   object-fit: contain;
+}
+
+.top_img2{
+  width: 700px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.top_img3{
+  width: 700px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.top_img4{
+  width: 700px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.spot-menu{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  padding-right: 15px;
+}
+
+.gourmetArticle-block{
+  margin-left: 10px;
+}
+
+/* 背景色だけを半透明にしたい場合はopacityではなく、rgbaで調節 */
+header{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 0;
+    left: 0; 
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.header-right {
+  display: flex;
+  top: 0;
+  right: 0;
+  justify-content: flex-end; /* 右寄せにする */
+}
+
+/* .header-right header-right-menu{
+  list-style: none;
+} */
+
+main{
+  margin-top: 100px;
+}
+
+.menu {
+  list-style: none; /* リストのデフォルトのマーカーを削除 */
+  font-family: 'Arial Black',sans-serif;
+}
+
+/* ホバーした時に文字の色を変えたい */
+.head-menu:hover{
+  color: #1d851cc6;
+  transition: all 0.5s ease;
+  font-family: 'ＭＳ ゴシック',sans-serif;
+}
+
+.menu li {
+  margin-left: 20px; /* メニューアイテム間の余白を設定 */
+}
+
+/* 以下は必要に応じて追加のスタイルを適用 */
+/* メニューアイテムに関するスタイル */
+.menu li a {
+  text-decoration: none;
+  color: #333; /* メニューアイテムのテキストの色を設定 */
+}
+
+.main-menu{
+  font-family: 'Arial Black',sans-serif;
+}
+
+.main-menu:hover{
+  color: #e3f5e2c6;
+  transition: all 0.5s ease;
+  font-family: 'ＭＳ ゴシック',sans-serif;
+}
+
+/* * {
+  box-sizing: border-box
+}
+.image-slideshow {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+.image-slideshow {
+width: 100%
+}
+.fade {
+animation-name: fade;
+animation-duration: 2s;
+}
+@keyframes fade {
+from {opacity: .5}
+to {opacity: 1}
+} */
+
+/* スライドショー外枠 */
+/* .slide-wrapper {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  } */
+  
+  
+/* ↓ 左右のボタン */
+/* .next {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 10px;
+  bottom: 64%;
+  z-index: 10;
+  cursor: pointer;
+  border-top: solid 3px #000;
+  border-right: solid 3px #000;
+  -webkit-transform: rotate(45deg) translateY(50%);
+  transform: rotate(45deg) translateY(50%);
+}
+.prev {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 25px;
+  bottom: 64%;
+  z-index: 10;
+  cursor: pointer;
+  border-top: solid 3px #000;
+  border-right: solid 3px #000;
+  -webkit-transform: rotate(-135deg) translateY(-50%);
+  transform: rotate(-135deg) translateY(-50%);
+} */
+
+/* ↓ インジケーター */
+/* .indicator {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  column-gap: 18px;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+} */
+
+/* .indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+} */
+/* .indicator > li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  list-style: none;
+  background-color: #fff;
+  border: 2px #000 solid;
+  cursor: pointer;
+}
+.indicator li:first-of-type {
+  background-color: #000;
+
+} */
+
+/* スライドショー画像 */
+/* 画像が離れすぎている */
+/*スライド全体 */
+/* .slide { 
+  width: 300%;
+  height: 100%;
+  display: flex;
+  transition: all 0.3s;
+} */
+/* 
+.slide div { /* スライドの中身 
+  width: 33.3%;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+/* スライドさせるために必要なクラス */
+/*.slide1 { 
+  transform: translateX(0);
+}
+
+/* スライドさせるために必要なクラス */
+/* .slide2 {  
+  transform: translateX(-33.33%);
+}
+
+.slide3 { 
+  transform: translateX(-66.66%);
+}
+*/
+/* スライドさせるために必要なクラス */
+
+.slide-sec{
+  display: flex;
+  /* width: 100vw;
+  height: 100vh; */
+
+}
+
+
+
+.menu-inner{
+  max-width: 1200px;
+  margin-inline: auto;
+  background-color: rgba(8, 43, 238, 0.664);
+  /* padding: 20px; */
+}
+
+.menu {
+  display: flex;
+  padding-left:0;
+  justify-content: center;
+  gap: 150px;
+  
+  
+}
+
+.menu li {
+  list-style:none;/* listの黒丸をなくす */
+  padding: 5px; /* メニュー項目の余白 */
+  /* background-color: rgb(44, 135, 220);  */
+  
+}
+
+.menu > li > a{
+  font-size: 30px;
+  font: bold;
+  text-decoration:none;
+  color: black;
+}
+
+.gourmetArticle{
+  list-style: none;
+  display: flex;
+}
+
+.gourmetTheme{
+  margin: 20px;
+  text-align: center;
+}
+
+/* divの画像（画像の大きさに合わせてwidthとheightを変える） */
+.article-image{
+  width: 300px;
+  height: 300px;
+  text-align: left;
+  /* display: flex; */
+}
+
+/* 画像の説明の位置調整 */
+/* .gourmetInfo{
+  margin-top: 10px;
+  text-align: left;
+} */
+
+.gourmetTitle > a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gourmetTitle > a:hover{
+  color: rgb(72, 137, 39);
+  transition: all 0.5s ease;
+}
+
+
+
+
+/* ボトム背景 */
+.shapedividers_com-8260{
+  overflow:hidden;
+  position:relative;
+  }
+  .shapedividers_com-8260::before{
+  content:'';
+  font-family:'shape divider from ShapeDividers.com';
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat; 
+  background-size: 100% 40px;
+  background-position: 50% 100%;    
+  transform: rotateY(180deg);
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%237ea8ec"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%237ea8ec"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%237ea8ec"/></svg>'); 
+  }
+  
+  @media (min-width:768px){
+  .shapedividers_com-8260::before{
+  background-size: 100% 125px;
+  background-position: 50% 100%;  
+  transform: rotateY(180deg); 
+  }  
+  }
+   
+  @media (min-width:1025px){
+  .shapedividers_com-8260::before{ 
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw; 
+  background-size: 115% 78px;
+  background-position: 50% 100%; 
+  transform: rotateY(180deg); 
+  }
+  }
+  @media (min-width:2100px){
+  .shapedividers_com-8260::before{
+  background-size: 115% calc(2vw + 78px);
+  }
+  }
+   
+  body {
+    background: #fffae8;
+  }
+  .content {
+    padding: 2rem;
+  }
+  .blue {
+    background: #7EA8EC;
+  }
+  h1, h2 {
+    font-family: 'Lobster Two', cursive;
+  }
+
+  .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+}
+
+.pu-center {
+  display: flex;
+  justify-content: center;
+  /* width: 700px;
+  height: 600px; */
+}
+
+/* .pu-center-img {
+  width: 20%;
+}
+
+.pu-center-btn {
+  margin: auto;
+} */
+
+   
+footer{
+    background-color: #166a24;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 100px;
+    font-size: 20px;
+    /* position: absolute;
+    bottom:0; */
+}
+
+
+
+
+.article-content{
+  display: flex;
+}
+
+.img-info{
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  padding-left: 20px ;
+}
+
+ /* .title-content{
+  margin: 25px;
+  padding-left: 20px ;
+} */
+
+.title-des{
+  padding: 20px 0px;
+  padding-bottom: 20px ;
+} 
+
+.image_description_box {
+  display: flex;
+  /* margin: 10px;
+  margin-left: 15px; */
+  /* vertical-align: center; */
+  width: 500px;
+  height: 500px;
+}
+
+.image_description_box {
+  display: flex;
+  /* vertical-align: center; */
+  width: 500px;
+  height: 500px;
+}
+
+p.description-info {
+  /* display: flex; */
+  padding: 10px 0px 0px 0px;
+  width: 500px;
+}
+
+.comment-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin: 10px 10px 10px 250px;
+
+}
+
+.map{
+  margin: 5px 0px;
+}
+
+/* p.description-comment{
+  display: flex;
+  width: 400px;
+  margin-left: 15px;
+} */
+
+/* カルーセル */
+.carousel-list{
+  list-style: none;
+}
+
+
+
+
+
+
+
